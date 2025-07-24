@@ -1,0 +1,188 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(14, 14, 62), rgb(3, 3, 33));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main{
+    width: 900px;
+    height: 550px;   
+    background: linear-gradient(90deg,rgb(255, 22, 61),pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -7px 10px 111px -33px rgba(0,0,0,0.75);  
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 30px;
+    align-items: center;
+    z-index: 1;
+}
+nav img{
+    height: 40px;
+    cursor: pointer;
+}
+.nav-menu {
+    display: flex; 
+    gap: 50px;
+    color: aliceblue;
+    font-weight: 700;
+    cursor: pointer;
+}
+   
+nav button{
+    background: transparent;
+    border-radius: 15px;
+    color: aliceblue;
+    padding: 10px 25px;
+    border: 1.9px solid white;
+    cursor: pointer;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap:50px;
+    margin: 30px;
+}
+h1{
+    text-align: center;
+    color:white;
+    margin: 10px;
+}
+
+.juice-info{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.juice-bunch{
+    width: 90px;
+    height: 120px;
+    padding-bottom:10px ;
+    z-index: 1;
+}
+.static-juice-img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.juice-bottle-imgs{
+    display: flex;
+    justify-content: center;
+    gap:5px;    
+}
+.activePhoto{
+    border-bottom: 2px solid white;
+}
+.juice-wheel{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    position: absolute;
+    right:-280px;
+    bottom:-300px;
+    transform: rotate(-45deg);
+    transition: transform 1s;
+    z-index: 1;
+}
+.juice-wheel img{
+    width: 320px;
+}
+.dynamic-juice-1{
+    position: absolute;
+   top:-350px;
+   right:90px;
+}
+.dynamic-juice-2{
+    position: absolute;
+    transform: rotate(90deg);
+    right:-290px;
+    top:30px;
+}
+.dynamic-juice-3{
+    position: absolute;
+    transform: rotate(180deg);
+    bottom:-350px;
+    right:83px;
+}
+.dynamic-juice-4{
+    position: absolute;
+    transform: rotate(-90deg);
+    top:30px;
+    left:-290px
+}
+.dynamic-juice-4{
+    position: absolute;
+    transform: rotate(-90deg);
+    top:30px;
+    left:-290px
+}
+.fruits-wheel{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    top:-600px;
+    left:-480px;
+    transform: rotate(-45deg);
+    transition: transform 1s;
+    z-index: 0;
+
+}
+.fruits-wheel img{
+    width: 650px;
+    opacity: 40%;
+}
+.dynamic-fruit-1{
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: -500px;
+    left:10px;
+ 
+}
+.dynamic-fruit-2{
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 200px;
+    left:-580px;
+}
+.dynamic-fruit-3{
+    position: absolute;
+    transform: rotate(100deg);
+    top: -350px;
+    left:90px; 
+}
+.dynamic-fruit-4{
+    position: absolute;
+    bottom: 120px;
+    right:-600px; 
+}
+
+.fade-in {
+    animation: fadeIn 1.5s forwards;
+  }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
